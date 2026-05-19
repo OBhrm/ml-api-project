@@ -1,0 +1,39 @@
+from pydantic import BaseModel
+
+class EnergyInput(BaseModel):
+    BuildingType: str
+    PrimaryPropertyType: str
+    Neighborhood: str
+    PropertyGFATotal_log: float
+    BuildingAge: float
+    IsMultiBuilding: int
+    NumberofBuildingsBin: str
+    FloorsBin: str
+    GFA_per_Floor: float
+    ParkingRatio: float
+    Electricity_ratio: float
+    Gas_ratio: float
+    Steam_ratio: float
+    office_services_ratio: float
+    parking_ratio: float
+    retail_ratio: float
+    food_ratio: float
+    education_ratio: float
+    lodging_ratio: float
+    multifamily_housing_ratio: float
+    healthcare_ratio: float
+    public_services_ratio: float
+    entertainment_ratio: float
+    gym_ratio: float
+    swimming_pool_ratio: float
+    services_ratio: float
+    non_refrigerated_warehouse_ratio: float
+    refrigerated_warehouse_ratio: float
+    distribution_center_ratio: float
+    self_storage_ratio: float
+    manufacturing_industrial_ratio: float
+    data_center_ratio: float
+    laboratory_ratio: float
+    utility_ratio: float
+    other_ratio: float
+    ENERGYSTARScore: float
