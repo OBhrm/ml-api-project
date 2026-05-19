@@ -13,3 +13,6 @@ Ce projet consiste à déployer un modèle de machine learning via une API.
 - app/ : code principal de l'API
 - requirements.txt : dépendances
 - README.md : documentation
+
+## Installation
+Instructions à venir
