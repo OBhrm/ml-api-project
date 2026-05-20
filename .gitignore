@@ -2,12 +2,15 @@
 __pycache__/
 *.pyc
 
-# Environnement virtuel
+# Virtual environment
 .venv/
 
-# OS
-.DS_Store
+# Pytest
+.pytest_cache/
+.coverage
 
 # VS Code
 .vscode/
 
+# OS
+.DS_Store
