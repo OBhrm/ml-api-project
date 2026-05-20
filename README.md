@@ -1,18 +1,48 @@
 # ML API Project
 
-## Description
-Ce projet consiste à déployer un modèle de machine learning via une API.
+API de prédiction énergétique déployée avec FastAPI, PostgreSQL et GitHub Actions.
 
-## Objectif
-- Exposer un modèle ML avec FastAPI
-- Permettre des prédictions via une API
-- Mettre en place des bonnes pratiques (tests, CI/CD)
+---
 
-## Structure du projet
+# Objectif du projet
 
-- app/ : code principal de l'API
-- requirements.txt : dépendances
-- README.md : documentation
+Ce projet permet :
 
-## Installation
-Instructions à venir
+- de charger un modèle de Machine Learning
+- d’exposer ce modèle via une API FastAPI
+- de générer des prédictions énergétiques
+- de stocker les prédictions dans PostgreSQL
+- d’automatiser les tests avec GitHub Actions
+
+---
+
+# Technologies utilisées
+
+- Python 3.11
+- FastAPI
+- PostgreSQL
+- SQLAlchemy
+- Pytest
+- GitHub Actions
+- Scikit-learn
+
+---
+
+# Structure du projet
+
+```bash
+app/
+├── api/
+│   └── schemas.py
+├── models/
+│   ├── energy_model.pkl
+│   └── model.py
+├── database.py
+├── db_models.py
+├── main.py
+
+tests/
+└── test_api.py
+
+.github/workflows/
+└── ci.yml
